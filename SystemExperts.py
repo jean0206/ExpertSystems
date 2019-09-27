@@ -2,7 +2,7 @@
 """
 Created on Tue Sep 24 00:56:07 2019
 
-@author: jeank
+@author: Jean Carlos Ortiz Riascos A00346333 Universidad Icesi
 """
 
 #Comentario
@@ -11,9 +11,6 @@ from pyknow import *
 
 class Component(Fact):
     """Info about the traffic light."""
-    pass
-
-class resultados(Fact):
     pass
 
 
@@ -316,7 +313,7 @@ class SoilAnalyze(KnowledgeEngine):
         print("     |-(2) Baja disponibilidad de Calcio")
     
     @Rule(Component(arcilla=P(lambda arcilla:arcilla>=40.0))& Component(PH=P(lambda PH:PH=='ACIDO'))& Component(CE=P(lambda CE:CE=='BAJA')))
-    def rule41(self):
+    def rule44(self):
         print("\n\n\n")    
         print("     |-(1) Limitaciones de movimiento de agua")
         print("     |-(2) Baja difusion de Oxigeno y flujo de gases")
@@ -328,5 +325,5 @@ class SoilAnalyze(KnowledgeEngine):
 #-------------TEST--------------    
 analisis = SoilAnalyze()
 analisis.reset()
-analisis.declare(Component(limo=20,arena=20,arcilla=60,ph=3,ce=0.2))
+analisis.declare(Component(limo=20,arena=20,arcilla=60,ph=6.9,ce=0.2))
 analisis.run()
