@@ -313,7 +313,7 @@ class SoilAnalyze(KnowledgeEngine):
         print("     |-(2) Baja disponibilidad de Calcio")
     
     @Rule(Component(arcilla=P(lambda arcilla:arcilla>=40.0))& Component(PH=P(lambda PH:PH=='ACIDO'))& Component(CE=P(lambda CE:CE=='BAJA')))
-    def rule44(self):
+    def rule45(self):
         print("\n\n\n")    
         print("     |-(1) Limitaciones de movimiento de agua")
         print("     |-(2) Baja difusion de Oxigeno y flujo de gases")
