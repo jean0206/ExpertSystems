@@ -323,7 +323,9 @@ class SoilAnalyze(KnowledgeEngine):
         print("     |-(3) Baja mineralizacion de MO (Baja actvidad microbiologica")
         print("     |-(4) Acumulacion de iones alcalinoterreos	")
         print("     |-(5) Baja disponibilidad de elementos menores ")
-    
+        
+        
+#-------------TEST--------------    
 analisis = SoilAnalyze()
 analisis.reset()
 analisis.declare(Component(limo=20,arena=20,arcilla=60,ph=3,ce=0.2))
